@@ -44,5 +44,5 @@ ratings:
 exclude_paths:
 # - config/
 # - tests/
-- "**.spec.php"
+# - "**.spec.php"
 # - tests/__tests__

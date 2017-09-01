@@ -1,0 +1,13 @@
+---
+engines:
+  
+  phpcodesniffer:
+    enabled: true
+    config:
+      file_extensions: "php,inc"
+      standard: "PSR1,PSR2"
+    checks:
+      PSR1 Classes ClassDeclaration MissingNamespace:
+        enabled: false
+      Generic WhiteSpace DisallowTabIndent NonIndentTabsUsed:
+        enabled: false

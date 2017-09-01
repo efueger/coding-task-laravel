@@ -17,6 +17,17 @@ engines:
     enabled: false
   phpcodesniffer:
     enabled: true
+    config:
+      file_extensions: "php,inc"
+      standard: "PSR1,PSR2"
+    # checks:
+    #   PSR1 Classes ClassDeclaration MissingNamespace:
+    #     enabled: false
+    checks:
+      PSR1 Classes ClassDeclaration MissingNamespace:
+        enabled: false
+      Generic WhiteSpace DisallowTabIndent NonIndentTabsUsed:
+          enabled: false
   radon:
     enabled: false
 ratings:
@@ -29,6 +40,9 @@ ratings:
   - "**.php"
   - "**.py"
   - "**.rb"
+  - tests/
 exclude_paths:
-- config/
-- tests/
+# - config/
+# - tests/
+- "**.spec.php"
+# - tests/__tests__
